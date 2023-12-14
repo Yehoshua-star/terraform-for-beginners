@@ -10,7 +10,7 @@ terraform {
 provider "docker" {} # This `provider` block specifies that we want to use the `docker` provider.
 
 resource "docker_image" "nginx_image" { # This `resource` block creates a Docker image named `nginx_image` using the `nginx:1.23.3` image.
-  name = "nginx:1.23.3"
+  name = "nginx:1.23.3" 
 }
 
 resource "docker_container" "nginx_container" { # This `resource` block creates a Docker container named `nginx_container` based on the `nginx_image` image.
